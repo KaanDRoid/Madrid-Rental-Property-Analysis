@@ -49,6 +49,12 @@ Other findings:
 - Size has a weak negative correlation with rent in this sample (-0.106), which reflects the narrow price range of the data.
 - Both models overfit (training MAE well below test MAE), and a test R² of 0.295 means most of the variation in rent is not explained by the available features.
 
+## Figures
+
+Dashboard from the notebook's evaluation cell: predicted vs actual rent for the Random Forest model, prediction errors, rent by property type, the most expensive neighborhoods (listing counts in brackets), price per m², size vs rent, test MAE of both models and rent with and without amenities.
+
+![Madrid rental analysis dashboard](docs/images/analysis_dashboard.png)
+
 ## How to Run
 
 Requires Python 3.9 or newer.
@@ -66,6 +72,8 @@ Run the cells in order (Kernel > Restart & Run All). The notebook reads `data/id
 .
 ├── data/
 │   └── idealista_api_rent_madrid.csv   # Raw listings from the Idealista API
+├── docs/
+│   └── images/                         # Figures used in this README
 ├── madrid_rental_analysis.ipynb        # Cleaning, SQL, modeling and charts
 ├── madrid_rentals.db                   # SQLite database with the cleaned data
 ├── requirements.txt                    # Python dependencies
